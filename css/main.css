@@ -158,3 +158,20 @@ p a:active {
     }
 }
 
+/*freecodecamp challenges tweaks*/
+
+#image {
+  max-width: 45%;
+  height: auto;
+  margin: auto;
+  display: block;
+}
+
+#img-caption {
+  font-size: 15px;
+  text-align: center;
+}
+
+#tribute-footer {
+  text-align: center;
+}
