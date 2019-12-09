@@ -132,6 +132,42 @@ p a:active {
     text-decoration: none;
 }
 
+summary {
+    display: inline-block;
+}
+
+summary:hover {
+    
+}
+
+summary::before {
+    content: "";
+    border-color: transparent #ea9aa8;
+    border-style: solid;
+    border-width: 0.35em 0 0.35em 0.45em;
+    display: block;
+    width: 0;
+    height: 0;
+    top: 1.5em;
+    position: relative;
+    transform: rotate(0deg);
+    left: -20px;
+}
+
+details[open] > summary::before {
+    content: "";
+    border-color: transparent #ea9aa8;
+    border-style: solid;
+    border-width: 0.35em 0 0.35em 0.45em;
+    display: block;
+    width: 0;
+    height: 0;
+    top: 1.5em;
+    position: relative;
+    transform: rotate(90deg);
+    left: -20px;
+}
+
 @media (max-width: 400px) {
     #navbar {
         position: left;
@@ -149,6 +185,15 @@ p a:active {
     p {
         font-size: 16px;
         padding-right: 0;
+    }
+    summary {
+        display: block;
+    }
+    summary::before {
+        content: none;
+    }
+    details[open] > summary::before {
+        content: none;
     }
 }
 
