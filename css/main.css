@@ -136,10 +136,6 @@ summary {
     display: inline-block;
 }
 
-summary:hover {
-    
-}
-
 summary::before {
     content: "";
     border-color: transparent #ea9aa8;
@@ -172,6 +168,41 @@ img {
     height: 3em;
     width: auto;
 }
+
+/*h1.typewriter {
+    width: auto;
+    display: inline-block;
+    overflow: hidden;
+    border-right: .15em solid black;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: 
+       typing: 2.5s steps(100, end),
+       blink-caret .75s step-end infinite
+}
+
+h2.typewriter {
+  width: auto;
+  display: inline-block;
+  overflow: hidden;
+  border-right: .15em solid black;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .05em;
+  animation:
+     typing 3.5s steps(100, end),
+     blink-caret .75s step-end infinite
+}
+
+@keyframes typing{
+  from { max-width: 0 }
+  to { max-width: 100% }
+}
+
+@keyframes blink-caret{
+  from, to { border-color: transparent }
+  50% { border-color: black }
+}*/
 
 @media (max-width: 400px) {
     #navbar {
