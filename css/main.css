@@ -17,6 +17,7 @@ body {
    /* -ms-text-size-adjust: 100%;*/
     margin-left: 140px; /* same as width of vertical navbar*/
     padding-left: 140px;
+    padding-right: 40px;
 }
 
 main {
@@ -246,7 +247,7 @@ h2.typewriter {
 /*freecodecamp challenges tweaks*/
 
 #image {
-  max-width: 45%;
+  max-width: 35%;
   height: auto;
   margin: auto;
   display: block;
