@@ -168,6 +168,11 @@ details[open] > summary::before {
     left: -20px;
 }
 
+img {
+    height: 3em;
+    width: auto;
+}
+
 @media (max-width: 400px) {
     #navbar {
         position: left;
@@ -194,6 +199,10 @@ details[open] > summary::before {
     }
     details[open] > summary::before {
         content: none;
+    }
+    img {
+        height: 1.5em;
+        width: auto;
     }
 }
 
