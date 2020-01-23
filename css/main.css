@@ -26,6 +26,10 @@ main {
     padding-top: 20px;
 }
 
+main p {
+    margin-right: 5em;
+}
+
 h1,h2,h3,h4,h5,h6 {
     margin: 0rem;
     line-height: 1.25;
@@ -67,6 +71,12 @@ nav a:hover {
     color: #064579;
 }
 
+#navbar .icon {
+    display: none;
+}
+
+
+
 li::before {
     content: "";
     border-color: transparent #ea9aa8;
@@ -106,8 +116,8 @@ p a:active {
     background-size: 100% 88%;
 }
 
-.fa {
-    font-size: 40px;
+body .fa {
+    font-size: 25px;
     position: center;
     text-align: center;
     margin: auto;
@@ -122,7 +132,7 @@ p a:active {
     color: rgb(232,223,223);
 }
 
-.fa:hover {
+body .fa:hover {
     color: #2196F3;
     transform: scale(1.25);
 }
@@ -205,13 +215,13 @@ h2.typewriter {
   50% { border-color: black }
 }*/
 
-@media (max-width: 400px) {
-    #navbar {
-        position: left;
-        width: 32%;
-        height: auto;
-        font-size: 1px;
-        margin: 5px 0;
+@media (max-width: 500px) {
+    #navbar li {
+        display: none;
+    }
+    #navbar .icon {
+        display: block;
+        padding: 0.05em 0;
     }
     h1 {
         font-size: 20px;
@@ -219,9 +229,9 @@ h2.typewriter {
     h2 {
         font-size: 18px;
     }
-    p {
+   main p {
         font-size: 16px;
-        padding-right: 0;
+        margin-right: 3%;
     }
     summary {
         display: block;
@@ -238,10 +248,25 @@ h2.typewriter {
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
     body {
-       padding-left: 20px;
+       padding-left: 0;
+       margin-left: 30%;
     }
+}
+
+@media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive li {
+    float: none;
+    display: grid;
+    text-align: left;
+  }
 }
 
 /*freecodecamp challenges tweaks*/

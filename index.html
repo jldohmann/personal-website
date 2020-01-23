@@ -11,18 +11,22 @@
 
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
 
     <header>
-        <nav id="navbar">
+        <nav class="topnav" id="navbar">
             <ul class="container">
                 <li><a href="#">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="docs/resume.pdf" target="_blank">Resume</a></li>
+                <a href="javascript:void(0);" class="icon" onclick="toggleFunc()">
+                    <i class="fa fa-bars"></i>
+                </a>
             </ul>
         </nav>
     </header>
@@ -41,6 +45,17 @@
         <a href="https://www.linkedin.com/in/jldohmann/" class="fa fa-linkedin"></a>
         </h3>
     </footer>
+
+    <script>
+        function toggleFunc() {
+            var x = document.getElementById("navbar");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
     
 </body>
 
