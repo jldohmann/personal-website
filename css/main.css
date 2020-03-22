@@ -1,10 +1,3 @@
-/** {
-    * -webkit-box-sizing: border-box;
-    * -moz-box-sizing: border-box;
-    * box-sizing: border-box;
-}*/
-
-
 html {
     line-height: 1.3;
     background-color: #95B7D9;
@@ -44,8 +37,15 @@ h1,h2,h3,h4,h5,h6 {
 		-0.15px 0.15px 0 #000,
 		0.15px 0.15px 0 #000;
 }*/
+input {
+    visibility: hidden;
+}
 
-#navbar {
+label {
+    display: none;
+}
+
+nav {
     height: auto;
     width: auto;
     position: fixed;
@@ -58,7 +58,6 @@ h1,h2,h3,h4,h5,h6 {
     border-radius: 5%;
 }
 
-
 nav a {
     padding: 6px 8px 6px 16px;
     font-size: 20px;
@@ -70,12 +69,6 @@ nav a {
 nav a:hover {
     color: #064579;
 }
-
-#navbar .icon {
-    display: none;
-}
-
-
 
 li::before {
     content: "";
@@ -91,7 +84,7 @@ li::before {
 }
 
 ul {
-    margin: 0.75em 0;
+    margin: 0.7em 0;
     padding: 0 1em;
     list-style: none;
 }
@@ -137,12 +130,6 @@ body .fa:hover {
     transform: scale(1.25);
 }
 
-#coffee {
-    font-size: 25px;
-    padding: 0;
-    text-decoration: none;
-}
-
 summary {
     display: inline-block;
 }
@@ -180,48 +167,55 @@ img {
     width: auto;
 }
 
-/*h1.typewriter {
-    width: auto;
-    display: inline-block;
-    overflow: hidden;
-    border-right: .15em solid black;
-    white-space: nowrap;
-    margin: 0 auto;
-    animation: 
-       typing: 2.5s steps(100, end),
-       blink-caret .75s step-end infinite
-}
-
-h2.typewriter {
-  width: auto;
-  display: inline-block;
-  overflow: hidden;
-  border-right: .15em solid black;
-  white-space: nowrap;
-  margin: 0 auto;
-  letter-spacing: .05em;
-  animation:
-     typing 3.5s steps(100, end),
-     blink-caret .75s step-end infinite
-}
-
-@keyframes typing{
-  from { max-width: 0 }
-  to { max-width: 100% }
-}
-
-@keyframes blink-caret{
-  from, to { border-color: transparent }
-  50% { border-color: black }
-}*/
-
 @media (max-width: 500px) {
-    #navbar li {
+    nav > ul {
         display: none;
+        margin: 0.75em 0;
+        padding: 0 1em;
+        list-style: none;
     }
-    #navbar .icon {
+    label[for="hamburger"] {
+        display: inline;
+        font-size: 4em;
+        position: relative;
+        color: black;
+        left: 15px;
+        top: 5px;
+    }
+    nav input:checked ~ ul {
         display: block;
-        padding: 0.05em 0;
+    }
+    nav {
+        width: auto;
+        height: auto;
+        position: fixed;
+        z-index: 1;
+        top: 20px;
+        left: 20px;
+        background: rgb(232,223,223);
+        overflow-x: hidden;
+        padding: 8px 0;
+        border-radius: 5%;
+    }
+    ul {
+        width: 100%;
+        margin: 0.75em 0;
+        padding: 0 1em;
+    }
+    ul > li {
+        display: block;
+        position: relative;
+    }
+    nav a {
+        padding: 6px 8px 6px 16px;
+        font-size: 30px;
+        text-decoration: none;
+        color: #2196F3;
+        display: block;
+    }
+    nav a:hover,
+    nav a:active {
+        color: #064579;
     }
     h1 {
         font-size: 20px;
@@ -255,7 +249,7 @@ h2.typewriter {
     }
 }
 
-@media screen and (max-width: 600px) {
+/*@media screen and (max-width: 600px) {
     .topnav.responsive {position: relative;}
     .topnav.responsive a.icon {
     position: absolute;
@@ -267,7 +261,7 @@ h2.typewriter {
     display: grid;
     text-align: left;
   }
-}
+}*/
 
 /*freecodecamp challenges tweaks*/
 
