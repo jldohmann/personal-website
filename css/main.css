@@ -167,7 +167,7 @@ img {
     width: auto;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     nav > ul {
         display: none;
         margin: 0.75em 0;
@@ -242,7 +242,7 @@ img {
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     body {
        padding-left: 0;
        margin-left: 30%;
