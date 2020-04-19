@@ -1,0 +1,87 @@
+input {
+    visibility: hidden;
+}
+label[for="hamburger"] {
+    font-size: 4em;
+    position: relative;
+}
+.topnav {
+    width: auto;
+    height: auto;
+    position: fixed;
+    z-index: 1;
+    top: 20px;
+    left: 20px;
+    background: rgb(232,223,223);
+    overflow-x: hidden;
+    padding: 8px 0;
+    border-radius: 5%;
+}
+.menubar {
+    width: 100%;
+    margin: 0.75em 0;
+    padding: 0 1em;
+}
+.menubar > li {
+    display: block;
+    position: relative;
+}
+.menubar a {
+    padding: 6px 8px 6px 16px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #2196F3;
+    display: block;
+}
+.menubar a:hover,
+.menubar a:active {
+    color: #064579;
+}
+.topnav > ul {
+    display: none;
+    margin: 0.75em 0;
+    padding: 0 1em;
+    list-style: none;
+}
+.topnav input:checked ~ ul {
+    display: block;
+}
+h1 {
+    font-size: 20px;
+}
+h2 {
+    font-size: 18px;
+}
+main p {
+    font-size: 16px;
+    margin-right: 3%;
+}
+summary {
+    display: block;
+}
+summary::before {
+    content: none;
+}
+details[open] > summary::before {
+    content: none;
+}
+img {
+    height: 1.5em;
+    width: auto;
+}
+body {
+    font-family: 'Courier New', Courier, monospace;
+    color: #515151;
+    padding-left: 0;
+    margin-left: 30%;
+}
+
+html {
+    line-height: 1.3;
+    background-color: #95B7D9;
+}
+body {
+    margin-left: 140px; /* same as width of vertical navbar*/
+    padding-left: 40px;
+    padding-right: 40px;
+}
