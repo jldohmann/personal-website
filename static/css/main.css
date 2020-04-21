@@ -184,7 +184,6 @@ img {
         position: relative;
         color: black;
         left: 15px;
-        top: 5px;
     }
     nav input:checked ~ ul {
         display: block;
