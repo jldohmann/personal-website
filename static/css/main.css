@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Consolas, monaco, monospace;
     color: #515151;
    /* -webkit-text-size-adjust: 100%;*/
    /* -ms-text-size-adjust: 100%;*/
@@ -21,6 +21,10 @@ main {
 
 main p {
     margin-right: 5em;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;;
 }
 
 h1,h2,h3,h4,h5,h6 {
