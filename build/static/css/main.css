@@ -118,7 +118,7 @@ body .fa {
     position: center;
     text-align: center;
     margin: auto;
-    padding: 5px;;
+    padding: 5px;
     text-decoration: none;
     text-shadow:
         -1px 1px 0 #064579, 
@@ -127,6 +127,26 @@ body .fa {
         -1px -1px 0 #064579
     ;
     color: rgb(232,223,223);
+}
+
+#dev-badge {
+    height: 30px;
+    width: 30px;
+    fill: rgb(232,223,223);
+    stroke-width: 15;
+    stroke: #064579;
+    padding-top: 10px;
+}
+
+#dev-badge:hover {
+    fill: #2196F3;
+    transform: scale(1.25);
+}
+
+#contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
 }
 
 body .fa:hover {
