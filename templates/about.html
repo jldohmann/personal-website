@@ -18,24 +18,24 @@
     <img src="static/images/icons/icon-rpi.png" alt="Raspberry Pi icon">
 </details>
 
-<details open>
+<details open id="background">
     <summary><h2>background:</h2></summary>
      <p>I studied physics and mathematics at the University of Texas at Austin. It was there that I learned how to use <i>Mathematica</i>, which is a notebook interface environment for working with the Wolfram Language: a <a href="https://en.wikipedia.org/wiki/Lisp_(programming_language)">LISP</a>-inspired functional programming language, <a href="https://www.wolfram.com/language/">among other things</a>. I did a software engineering internship with <a href="http://www.business-laboratory.com/">Business Laboratory</a> in Houston, and ended up learning Python and AWS with WL for developing some automated microservices.</p>
 </details>
 
-<details>
+<details id="currently">
     <summary><h2>currently:</h2></summary>
     <p>I am in a technical writing position that focuses on product documentation for WL. I help design user workflows for a variety of applications as well as help architect how information is structured, cross-linked, etc. I also help create internal tools to automate our documentation build process.</p>
 </details>
 
-<details>
+<details id="nonwork">
     <summary><h2>outside of work:</h2></summary>
     <p>I'd been learning HTML and CSS for a bit and thought I'd check out what else is out there: coming from a background having mostly used a proprietary language, open source and web development intimidated me. But the skills I've learned from work easily transfer over to more standard tooling.</p>
 
     <p>My housing organization needed help updating their website, so I took up the challenge to learn web development more seriously, and am now spearheading the development process.</p>
 </details>
 
-<details>
+<details id="other">
     <summary><h2>do you do anything other than program?</h2></summary>
     <p>Sometimes...</p>
 
@@ -45,4 +45,10 @@
 
     <p>I talk about all these things on my <a href="https://twitter.com/fourierfiend">Twitter</a>.</p>
 </details>
+
+<script>
+    if (window.innerWidth < 600) {
+        document.getElementById("background").removeAttribute('open');
+    }
+</script>
 {% endblock %}
