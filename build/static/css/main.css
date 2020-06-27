@@ -24,7 +24,8 @@ main p {
 }
 
 h1 {
-    font-family: 'Courier New', Courier, monospace;
+    font-size: 55px;
+    letter-spacing: 5px;
 }
 
 h1,h2,h3,h4,h5,h6 {
