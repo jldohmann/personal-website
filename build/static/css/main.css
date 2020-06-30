@@ -130,6 +130,8 @@ body .fa {
     stroke-width: 15;
     stroke: #064579;
     padding-top: 10px;
+    position: relative;
+    top: 6px;
 }
 
 #dev-badge:hover {
