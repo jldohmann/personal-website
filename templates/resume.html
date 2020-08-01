@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jesse's resume</title>
+    <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet" />
+    <link href="static/css/extra.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="nothing">
+
+  <nav style='padding: 20px; border-bottom: 3px solid #ccc; margin-bottom: 60px;'>
+    <div class="container" style="display: flex;">
+      <h2 style="margin-bottom: 0;">
+        <i class="nes-icon coin"></i>
+        jesse
+      </h2>
+      <a style="margin-left: auto; font-size: smaller;" href="static/files/resume.pdf" target="_blank">
+        PDF version
+      </a>
+    </div>
+    <div style="display: flex; justify-content: flex-end;">
+      <h3 style="margin-right: auto; padding-left: 4em;">software developer</h3>
+      <button id="removeClass" class="nes-btn is-primary" onclick="initiate()">Light mode</button>
+      <button id="addClass" class="nes-btn is-primary" onclick="initiate()">Dark mode</button>
+    </div>
+  </nav>
+
+  <div class="container" style="margin-bottom: 50px;">
+    <div class="row">
+      <div class="column">
+        <i class="nes-ash"></i>
+      </div>
+      <div class="col-sm-9 col-xs-12">
+        <div class="nes-balloon from-left">
+          <p>
+            I'm Jesse. Here is a little bit about me
+            <i class="nes-icon is-small heart"></i>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <div class="nes-container with-title">
+          <h3 class="title">
+            Things I do
+          </h3>
+          <div>
+            <div class="lists">
+              <ul id="whatIDo" class="nes-list is-disc" style="margin-bottom: 0;">
+                <li>GUI developer</li>
+                <li>Technical writer</li>
+                <li>System admin</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="nes-container with-title"
+          style="margin-top: 50px; margin-bottom: 50px">
+          <h3 class="title">
+            Noteworthies
+          </h3>
+          <div>
+            <i class="nes-icon is-small heart"></i>
+            Documentation focused
+          </div>
+          <div>
+            <i class="nes-icon is-small star"></i>
+            Taught 160 students
+          </div>
+        </div>
+        <div class="nes-container with-title"
+          style="margin-bottom: 50px; margin-top: 50px;">
+          <h3 class="title">
+            My Socials
+          </h3>
+          <div>
+            <a href="#">
+              <i class="nes-icon twitter"></i>
+            </a>
+            <a href="#">
+              <i class="nes-icon github"></i>
+            </a>
+            <a href="#">
+              <i class="nes-icon gmail"></i>
+            </a>
+            <a href="#">
+              <i class="nes-icon linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-8 col-sm-12 col-xs-12">
+        <div class="nes-container with-title" style="margin-bottom: 40px;" >
+          <h3 class="title">
+            Languages
+          </h3>
+          <div class="row">
+            <div class="col-small-4 col-xs-12">Wolfram Language</div>
+            <div class="col-sm-8 col-xs-12">
+              <progress
+                class="nes-progress is-success"
+                value="95"
+                max="100"
+              >
+              </progress>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-small-4 col-xs-12">Python</div>
+            <div class="col-sm-8 col-xs-12">
+              <progress
+                class="nes-progress is-success"
+                value="75"
+                max="100"
+              >
+              </progress>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-small-4 col-xs-12">HTML[5]</div>
+            <div class="col-sm-8 col-xs-12">
+              <progress
+                class="nes-progress is-success"
+                value="95"
+                max="100"
+              >
+              </progress>
+            </div>
+          </div>
+              <div class="row">
+                <div class="col-small-4 col-xs-12">CSS[3]</div>
+                <div class="col-sm-8 col-xs-12">
+                  <progress
+                    class="nes-progress is-warning"
+                    value="60"
+                    max="100"
+                  >
+                  </progress>
+                </div>
+              </div>
+          </div>
+
+        <div class="nes-container with-title"
+          style="margin-bottom: 50px; margin-top: 40px;" >
+          <h3 class="title">Tools & Frameworks</h3>
+
+          <div class="row">
+            <div class="col-sm-4 col-xs-12">Tkinter</div>
+            <div class="col-sm-8 col-xs-12">
+              <i class="nes-icon heart"></i>
+              <i class="nes-icon heart"></i>
+              <i class="nes-icon heart"></i>
+              <i class="nes-icon heart"></i>
+              <i class="nes-icon heart"></i>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4 col-xs-12">Flask</div>
+            <div class="col-sm-8 col-xs-12">
+              <i class="nes-icon heart"></i>
+              <i class="nes-icon heart"></i>
+              <i class="nes-icon heart"></i>
+              <i class="nes-icon heart"></i>
+              <i class="nes-icon is-half heart"></i>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4 col-xs-12">Git</div>
+            <div class="col-sm-8 col-xs-12">
+              <i class="nes-icon heart"></i>
+              <i class="nes-icon heart"></i>
+              <i class="nes-icon heart"></i>
+              <i class="nes-icon is-half heart"></i>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4 col-xs-12">Linux/Bash</div>
+            <div class="col-sm-8 col-xs-12">
+              <i class="nes-icon heart"></i>
+              <i class="nes-icon heart"></i>
+              <i class="nes-icon heart"></i>
+            </div>
+          </div>      
+        </div>
+
+        <h3 id="projects-title">
+          <i class="nes-icon star"></i>
+          Projects
+        </h3>
+
+        <div class="nes-container">
+          <!-- project 1 -->
+          <div class="row" style="margin-bottom: 30px;">
+            <div class="col-xs-2">
+              <img 
+                src="https://raw.githubusercontent.com/jldohmann/wolfram-notebooks/master/screenshot.png?size=50"
+                style="width: 100%; height: auto; image-rendering: 
+                pixelated; image-rendering: -moz-crisp-edges;" />
+            </div>
+            <div class="col-xs-10">
+              <h3>Dracula theme for Wolfram Notebooks</h3>
+              <p>Made with Wolfram Language</p>
+              <div>
+                  <a href="https://github.com/jldohmann/wolfram-notebooks" target="_blank">
+                      <div class="nes-icon github"></div>
+                  </a>
+                  <a href="https://resources.wolframcloud.com/FunctionRepository/resources/DraculaTheme" target="_blank">
+                      <svg
+                          class="logo"
+                          width="5%"
+                          height="auto"
+                          viewBox="0 0 60 100">
+                          <circle fill="#df4708" cx="30" cy="30" r="30"></circle>
+                          <path fill="#fff" d="M13.13 25.52v-.6a6.62 6.62 0 0 1 .39-2.05 8.56 8.56 0 0 1 2.75-3.97A7.13 7.13 0 0 1 20.2 17a3.81 3.81 0 0 1 2.68.94 1.39 1.39 0 0 1 .49 1.35 3.1 3.1 0 0 1-1.15 1.6.76.76 0 0 1-1.08-.03c-.83-.83-1.8-1.7-2.71-1.7-.6 0-.84.38-.98.94a22.56 22.56 0 0 0 0 4.66l.04.77h3.65c.14.38.04 1.5-.45 1.77h-3.2v9.96c0 2.1.24 2.23 2.6 2.47v1.3h-8.9v-1.3c1.77-.24 1.94-.38 1.94-2.47V27.3h-2.09l-.2-.41 1.04-1.36zM25.4 41.01v-17.8h6.37v1.4c-3.2.31-3.27.38-3.27 3.1v8.91c0 2.58.07 2.65 3.27 2.96v1.43zM32.77 35v-5.77a1.11 1.11 0 0 1 1.12-1.11h5.77a1.11 1.11 0 0 1 1.11 1.11V35a1.11 1.11 0 0 1-1.11 1.12h-5.77A1.11 1.11 0 0 1 32.77 35zM41.77 41.01v-1.43c3.14-.3 3.28-.38 3.28-3.1v-8.73c0-2.72-.14-2.79-3.28-3.1v-1.43h6.38v17.8z"></path>
+                       </svg>
+                    </a>
+              </div>
+            </div>
+          </div>
+          <!-- project 2 -->
+          <div class="row" style="margin-bottom: 30px;">
+            <div class="col-xs-2">
+              <img
+                src="static/images/website-thumbnail.png"
+                alt="website-thumbnail" 
+                style="width: 100%; height: auto;"/>
+            </div>
+            <div class="col-xs-10">
+              <h3>Personal Website</h3>
+              <p>Made with Flask, Frozen-Flask</p>
+              <div>
+                  <a href="https://github.com/jldohmann/personal-website" target="_blank">
+                      <div class="nes-icon github"></div>
+                  </a>
+                  <a href="https://jldohmann.netlify.app" target="_blank">
+                    <i class="nes-icon trophy"></i>
+                  </a>
+              </div>
+            </div>
+          </div>
+          <!-- project 3 -->
+          <div class="row" style="margin-bottom: 30px;">
+            <div class="col-xs-2">
+              <img
+                src="https://jldohmann-blog.netlify.app/theme/images/Coffee-With-Code-logo.PNG"
+                alt="Coffee with Code"
+                style="width: 100%; height: auto;" />
+            </div>
+            <div class="col-xs-10">
+              <h3>Coffee With Code</h3>
+              <p>Made with Pelican</p>
+              <div>
+                <a href="https://github.com/jldohmann/coffee-with-code" target="_blank">
+                    <div class="nes-icon github"></div>
+                </a>
+                <a href="https://jldohmann-blog.netlify.app" target="_blank">
+                  <i class="nes-icon trophy"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+  </div>
+
+  <div class="container" style="margin-top: 50px; font-size: 60%;">
+    <div class="row">
+      <div class="col-xs-12" style="text-align: center; color: #ccc;">
+        &copy; Jesse Dohmann, 2020
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+  <script>
+    $(function() {
+      $('#addClass').click(function() {
+        $('.nes-container').addClass('is-dark');
+        $('.nes-balloon').addClass('is-dark');
+        $('.nothing').addClass('dark-body');
+        $('#projects-title').addClass('topic-title');
+      });
+
+      $('#removeClass').click(function() {
+        $('.nes-container').removeClass('is-dark');
+        $('.nes-balloon').removeClass('is-dark');
+        $('.nothing').removeClass('dark-body');
+        $('#projects-title').removeClass('topic-title');
+      });
+    });
+  </script>
+
+  <!---
+  <script>
+      function initiate() {
+        //div = document.getElementsByClassName("nes-container");
+        //div.classList.add('is-dark');
+        document.getElementsByName('nes-container').classList.add('is-dark');
+      }
+      window.onload = initiate();
+  </script>
+-->
+
+</body>
+</html>

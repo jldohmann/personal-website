@@ -18,5 +18,10 @@ def about():
 def gratitude():
     return render_template("gratitude.html")
 
+@app.route("/resume")
+@app.route("/resume.html")
+def resume():
+    return render_template("resume.html")
+
 if __name__ == "__main__":
     app.run(debug=True)

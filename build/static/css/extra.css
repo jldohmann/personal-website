@@ -1,0 +1,15 @@
+.dark-body {
+    background-color: #1e1e1e;
+    color: #9cdcfe;
+}
+body {
+    padding-bottom: 90px;
+  }
+
+.nes-progress {
+    height: 25px;
+}
+
+.topic-title {
+    color: white;
+}
